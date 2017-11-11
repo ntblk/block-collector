@@ -39,8 +39,11 @@
     "feathers-nedb": "^2.6.2",
     "feathers-primus": "^2.2.0",
     "feathers-rest": "^1.8.0",
+    "feathers-sequelize": "^2.4.0",
     "helmet": "^3.6.1",
     "nedb": "^1.8.0",
+    "pg": "^7.4.0",
+    "sequelize": "^4.22.6",
     "serve-favicon": "^2.4.3",
     "winston": "^2.3.1",
     "ws": "^3.0.0"
