@@ -43,6 +43,8 @@
     "helmet": "^3.9.0",
     "nedb": "^1.8.0",
     "pg": "^7.4.0",
+    "pg-native": "^2.2.0",
+    "proxy-addr": "^2.0.2",
     "sequelize": "^4.22.6",
     "serve-favicon": "^2.4.5",
     "winston": "^2.4.0",

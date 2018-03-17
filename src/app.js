@@ -21,6 +21,9 @@ const appHooks = require('./app.hooks');
 
 const app = feathers();
 
+const proxyaddr = require('proxy-addr');
+
+
 // Load app configuration
 app.configure(configuration());
 // Enable CORS, security, compression, favicon and body parsing
@@ -56,7 +59,11 @@ app.use(handler());
 app.service('/report').hooks({
   before: {
     create(hook) {
-      hook.data.reporterIP = hook.params.req.ip;
+      // FIXME: Don't hard-code PROXY_NET
+      const PROXY_NET = '172.31.0.0/16';
+      var ip = proxyaddr(hook.params.req, PROXY_NET);
+      hook.data.reporterIP = ip;
+      //hook.data.reporterIP = hook.params.req.ip;
     },
   }
 });

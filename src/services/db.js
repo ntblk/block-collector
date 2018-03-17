@@ -16,10 +16,21 @@ function services() {
 
 
 function databaseConnect() {
+
+  const sequelize = new Sequelize('blocks', null, null, {
+    dialect: 'postgres',
+    native: true,
+    host: '/run/postgresql',
+    logging: false
+  });
+
+/*
   const sequelize = new Sequelize('postgres://postgres:@localhost:5432/blocks', {
     dialect: 'postgres',
     logging: false
   });
+  */
+  
   return sequelize;
   // app isn't defined at that moment
   //app.set('sequelize', sequelize);
