@@ -1,48 +1,31 @@
-# block-collector
+# block-collector: report collection tool for network restriction observations
 
-> Collect observations and reports
+> Collect network block observations and reports
 
 ## About
 
-This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+This module is compatible with _block-collector_ and other restriction discovery tools that implement the Network Block Interchange Format.
 
 ## Getting Started
 
-Getting up and running is as easy as 1, 2, 3.
+Getting up and running is easy.
 
 1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
 2. Install your dependencies
 
     ```
-    cd path/to/block-collector; npm install
+    cd path/to/block-collector; yarn install
     ```
 
 3. Start your app
 
     ```
-    npm start
+    yarn start
     ```
 
 ## Testing
 
-Simply run `npm test` and all your tests in the `test/` directory will be run.
-
-## Scaffolding
-
-Feathers has a powerful command line interface. Here are a few things it can do:
-
-```
-$ npm install -g feathers-cli             # Install Feathers CLI
-
-$ feathers generate service               # Generate a new Service
-$ feathers generate hook                  # Generate a new Hook
-$ feathers generate model                 # Generate a new Model
-$ feathers help                           # Show all commands
-```
-
-## Help
-
-For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
+Simply run `yarn test` and all your tests in the `test/` directory will be run.
 
 ## Changelog
 
@@ -52,6 +35,8 @@ __0.1.0__
 
 ## License
 
-Copyright (c) 2016
+_block-collector_ is an Open Source project made available by the [NetBlocks.org project](https://netblocks.org) and contributors under the terms of the MIT license.
+
+Copyright (c) 2018
 
 Licensed under the [MIT license](LICENSE).
