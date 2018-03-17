@@ -10,7 +10,7 @@ This module is compatible with _block-collector_ and other restriction discovery
 
 Getting up and running is easy.
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
+1. Make sure you have [NodeJS](https://nodejs.org/), [npm](https://www.npmjs.com/) and [PostgreSQL](https://www.postgresql.org) installed.
 2. Install your dependencies
 
     ```
